@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<toolbox>
+    <tool>
+        <key>import</key>
+        <scope>request</scope>
+        <class>org.apache.velocity.tools.view.tools.ImportTool</class>
+    </tool>
+    <tool>
+        <key>date</key>
+        <scope>application</scope>
+        <class>org.apache.velocity.tools.generic.DateTool</class>
+        <parameter name="format" value="yyyy-MM-dd HH:mm:ss"/>
+        <parameter name="depth" value="2"/>
+        <parameter name="skip" value="month"/>
+    </tool>
+
+    <tool>
+        <key>numberTool</key>
+        <scope>application</scope>
+        <class>org.apache.velocity.tools.generic.NumberTool</class>
+        <parameter name="format" value="0.00"/>
+    </tool>
+
+    <!--自定义格式化-->
+    <tool>
+        <key>tcDate</key>
+        <scope>application</scope>
+        <class>com.tcResourceManagement.common.VelocityUnixtimeToDate</class>
+    </tool>
+
+    <!--自定格式化解析-->
+    <tool>
+        <key>tcJson</key>
+        <scope>application</scope>
+        <class>com.tcResourceManagement.web.controller.comm.QueryJson</class>
+    </tool>
+
+
+
+    <tool>
+        <key>displayTool</key>
+        <scope>application</scope>
+        <class>org.apache.velocity.tools.generic.DisplayTool</class>
+    </tool>
+
+    <tool>
+        <key>escape</key>
+        <scope>application</scope>
+        <class>org.apache.velocity.tools.generic.EscapeTool</class>
+    </tool>
+
+    <tool>
+        <key>math</key>
+        <scope>application</scope>
+        <class>org.apache.velocity.tools.generic.MathTool</class>
+    </tool>
+
+    <tool>
+        <key>cookie</key>
+        <scope>request</scope>
+        <class>org.apache.velocity.tools.view.tools.CookieTool</class>
+    </tool>
+
+</toolbox>
